@@ -1,6 +1,6 @@
 // config/database.js
 module.exports = {
 
-    'url' : 'mongodb+srv://jerry:jerry@cluster0.sqkte.mongodb.net/storyboard?retryWrites=true&w=majority', 
+    'url' : 'mongodb+srv://JoshuaFindlay:Password@cluster0.o9tpc.mongodb.net/?retryWrites=true&w=majority', 
     'dbName': 'storyboard'
 };
