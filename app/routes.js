@@ -41,7 +41,7 @@ module.exports = function(app, passport, db) {
 // message board routes ===============================================================
 
     app.post('/postLine', (req, res) => {
-      db.collection('lines').save({
+      db.collection('lines').insertOne({
         name: req.body.name, 
         line: req.body.line
       }, (err, result) => {
@@ -65,7 +65,7 @@ module.exports = function(app, passport, db) {
         upsert: false
       },(error, result)=>{
         if(error) return console.log(error)
-        console.log("save to database")
+        console.log("database updated")
         res.redirect('/profile')
       })
     })
